@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Desafio</title>
+    </head>
+    <body>
+
+        <script>
+            function retornaEndereco(obj){
+                return (console.log("O usuário mora em " + obj.cidade + " /" + obj.uf + ", no bairro " + obj.bairro + ", na rua " + obj.rua + " com nº " + obj.numero));
+            }
+
+            function pares(x, y){
+                for(var i = x; i<=y; i++)
+                {
+                    if(i%2 === 0){
+                        console.log(i);
+                    }
+                    
+                }
+            }
+
+            function temHabilidade(skills){
+                for(var i = 0; i<skills.length; i++){
+                    if(skills[i] === 'Javascript'){
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+
+            function experiencia(anos){
+                if(anos === 0 || anos === 1){
+                    console.log("Iniciante");
+                }
+                if(anos > 1 && anos <= 3){
+                    console.log("Intermediário");
+                }
+                if(anos > 3 && anos <= 6){
+                    console.log("Avançado");
+                }
+                if(anos >= 7){
+                    console.log("Jedi Master");
+                }                
+            }
+
+            function retornaHabilidade(vet){
+                for(var i = 0; i < vet.length; i++){
+                    console.log("O " + vet[i].nome + " possui as habilidades " + vet[i].habilidades.join(", "));
+                }                
+            }
+
+            var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+            };
+
+            var skills = ['Javascript', 'Reactjs', 'Reactnative'];
+            var anosEstudo = 0;
+
+            var usuarios = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+            ];
+
+
+            retornaEndereco(endereco);
+            pares(32,321);
+            console.log(temHabilidade(skills));
+            experiencia(anosEstudo);
+            retornaHabilidade(usuarios);
+        </script>    
+    </body>  
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Intervalo e timeout</title>
+    </head>
+    <body>
+
+        <script>
+            var i = 1;
+            function segundos(){
+                console.log(i++);
+            }
+
+            setInterval(segundos, 1000);
+            
+            function exibeAlgo(){
+                console.log("Hello World!");
+            }
+
+            setTimeout(exibeAlgo, 5000);
+        </script>    
+    </body>  
+</html>

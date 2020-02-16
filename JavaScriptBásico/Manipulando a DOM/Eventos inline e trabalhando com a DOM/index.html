@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Eventos inline e trabalhando com a DOM</title>
+    </head>
+    <body>
+        <div>
+            <button onclick="textAlert()">Adicionar</button>
+            <input id="input"></input>
+        </div>
+
+        <script>
+            function textAlert(){
+                var texto = document.getElementById("input");
+                alert(texto.value);
+            }
+        </script>    
+    </body>  
+</html>

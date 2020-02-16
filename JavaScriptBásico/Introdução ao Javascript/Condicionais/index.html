@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Condicionais</title>
+    </head>
+    <body>
+
+        <script>
+            function retornaSexo(nome){
+                
+                var sexo = nome.lastIndexOf('a', nome.length-1)
+
+                if(sexo === nome.length-1){
+                    console.log("Feminino");
+                    
+                }
+                else{
+                    console.log("Masculino");
+                }
+            }
+
+            var nome = 'Diogo';
+            retornaSexo(nome);
+        </script>    
+    </body>  
+</html>
